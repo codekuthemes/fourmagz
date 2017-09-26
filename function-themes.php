@@ -1,6 +1,7 @@
 Replace Line below in /inc/theme-function.php:1088
 
-`/* Fourmagz Related Post */
+`<?php
+/* Fourmagz Related Post */
 if( ! function_exists('fourmagz_related_post') ) {
 	function fourmagz_related_post(){
 		global $post;
@@ -34,7 +35,8 @@ if( ! function_exists('fourmagz_related_post') ) {
 
 to:
 
-`/* Fourmagz Related Post */
+`
+/* Fourmagz Related Post */
 if( ! function_exists('fourmagz_related_post') ) {
 	function fourmagz_related_post(){
 		$orig_post = $post;
